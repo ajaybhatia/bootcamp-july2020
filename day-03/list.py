@@ -44,3 +44,12 @@ print(l2)
 
 print(6 in l1)
 print(len(l1))
+
+# Not a deep copy but a new reference is created
+l3 = l1
+print(l3)
+
+# Deep copy
+l3 = l1[:]
+print(l3)
+print(l3 is l1)
