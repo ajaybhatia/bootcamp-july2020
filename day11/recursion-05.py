@@ -23,5 +23,17 @@ def fib(n):
         return fib(n-1) + fib(n-2)
 
 
-for i in range(1, 11):
-    print(fib(i))
+def fib_seq(limit, step=1):
+    if step == limit:
+        print(fib(step))
+        return
+    else:
+        print(fib(step), end=" ")
+        return fib_seq(limit, step+1)
+
+
+fib_seq(5)
+
+
+# for i in range(1, 11):
+#     print(fib(i))
